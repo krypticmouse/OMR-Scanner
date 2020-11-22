@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+    <title>ED OMR Evaluator</title>
+    <style>
+        body{
+            background-color: darkgray;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: x-large;
+        }
+        #sub{
+            background-color: rgb(60, 95, 66);
+            color: white;
+            border-radius: 40px;
+            font-size: x-large;
+            width: 150px;
+            height: 50px;
+            border-style: none;
+        }
+        fieldset {
+            background-color: #eeeeee;
+            height: auto;
+        }
+        input{
+            align-items: center;
+            font-size: x-large;
+            border-style: none;
+        }
+
+        .file{
+            border-style: none;
+        }
+
+    </style>
+</head>
+<body>
+    <fieldset>
+        <form action = "http://localhost:5000/upload" method = "POST" enctype = "multipart/form-data">
+            Upload OMR(.jpeg only): <input type = "file" name="omr" accept=".jpeg">
+            <br><br>
+            Upload Key(.txt): <input type = "file" name="key" accept=".txt">
+            <br><br>
+            <input id = 'sub' type = "submit">
+        </form>
+    </fieldset>
+</body>

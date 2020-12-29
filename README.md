@@ -1,3 +1,2 @@
 # OMR-Scanner
-To run the script
-python app.py
+An OMR evaluator deployed over web via Flask.
